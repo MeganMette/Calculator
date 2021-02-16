@@ -1,0 +1,40 @@
+package com.bae.main;
+
+public class Runner {
+
+	public static int addition() {
+		int value1 = 1;
+		int value2 = 2;
+		int result = value1 + value2;
+		return result;
+	}
+
+	public static int subtraction() {
+		int value1 = 30;
+		int value2 = 25;
+		int result = value1 - value2;
+		return result;
+	}
+
+	public static int multiplication() {
+		int value1 = 15;
+		int value2 = 30;
+		int result = value1 * value2;
+		return result;
+	}
+
+	public static int division() {
+		int value1 = 15;
+		int value2 = 5;
+		int result = value1 / value2;
+		return result;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(addition());
+		System.out.println(subtraction());
+		System.out.println(multiplication());
+		System.out.println(division());
+	}
+
+}
