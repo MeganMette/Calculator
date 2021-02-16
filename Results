@@ -1,0 +1,29 @@
+package com.bae.main;
+
+public class Results {
+//	int biology;
+//	int chemistry;
+//	int physics;
+	static int total;
+	static double percentage;
+
+	public static int calculateResults(int biology, int chemistry, int physics) {
+		total = biology + chemistry + physics;
+		System.out.println("Your Biology mark is: " + biology);
+		System.out.println("Your Chemistry mark is: " + chemistry);
+		System.out.println("Your Physics mark is: " + physics);
+		return total;
+	}
+
+	public static double calculatePercentage() {
+		percentage = total * 100 / 450;
+		return percentage;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Your total mark is : " + calculateResults(50, 75, 30));
+		System.out.println("Your total percentage is: " + calculatePercentage() + "%");
+
+	}
+
+}
